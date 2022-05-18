@@ -3,6 +3,10 @@ export default class AbstractView {
 
     }
 
+    setTitle(title) {
+        document.title = title;
+    }
+
     beforeRender() {}
 
     render() {}

@@ -1,8 +1,9 @@
-import AbstractView from "./Components/AbsctractView";
+import AbstractView from "./Components/AbstractView";
 
 class App extends AbstractView {
     constructor() {
         super();
+        this.setTitle('Главная');
     }
 
     render() {
