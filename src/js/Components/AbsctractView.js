@@ -13,4 +13,4 @@ export default class AbstractView {
         return this.render();
     }
 
-} 
+}
