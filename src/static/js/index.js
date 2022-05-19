@@ -8,7 +8,7 @@ class App extends AbstractView {
 
     render() {
         return  `
-        Works!
+        Works Good!
         `;
     }
 }
