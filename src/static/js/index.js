@@ -1,4 +1,4 @@
-import AbstractView from "./Components/AbstractView";
+import AbstractView from "./Components/AbstractView.js";
 
 class App extends AbstractView {
     constructor() {
