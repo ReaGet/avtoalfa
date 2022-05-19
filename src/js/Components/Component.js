@@ -1,4 +1,4 @@
-export default class AbstractView {
+export default class Component {
     constructor() {
 
     }

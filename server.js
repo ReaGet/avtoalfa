@@ -1,16 +1,15 @@
 const express = require('express');
 const path = require('path');
-
-const staticDirectory = path.resolve(__dirname, 'src', 'static');
+const http = require('http');
 
 const app = express();
 
-app.use('/static', express.static(staticDirectory));
+app.set('port', process.env.PORT || 8000);
+app.use('/static', express.static(path.resolve(__dirname, 'src', 'static')));
 
 app.get('/*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'src', 'index.html'));
 });
 
-app.listen(process.env.PORT || 8000, () => {
-  console.log('Server is running...');
-});
+const server = http.createServer(app);
+server.listen(app.get('port'), () => console.log('Server is running...'));
