@@ -8,7 +8,7 @@ class App extends AbstractView {
 
     render() {
         return  `
-        Works Good!
+        Works Good Yeah asd!asdfasdf asdf
         `;
     }
 }
